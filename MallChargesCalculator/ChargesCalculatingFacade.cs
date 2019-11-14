@@ -4,7 +4,7 @@ namespace MallChargesCalculator
 {
     public class ChargesCalculatingFacade
     {
-        RentableRepository _rentableRepository = new RentableRepository();
+        private RentableRepository _rentableRepository = new RentableRepository();
 
         public void DisplayRentingCharges(int id)
         {
@@ -16,30 +16,40 @@ namespace MallChargesCalculator
             }
             Console.WriteLine("The Item is " + rentable.GetType().Name);
             Console.WriteLine("The Id is " + rentable.Id);
-            Console.WriteLine("The Renting Charges are " + GetRentingCharges(rentable));
-            Console.WriteLine("The Electricty Charges are " + GetElectricityCharges(rentable));
-            Console.WriteLine("The Water Charges are " + GetWaterCharges(rentable));
-            Console.WriteLine("The Cleaning Charges are " + GetCleaningCharges(rentable));
+            Console.WriteLine("The Renting Charges are " + rentable.Rent);
+            Console.WriteLine("The Electricty Charges are " + rentable.ElectricityCharges);
+            Console.WriteLine("The Water Charges are " + rentable.WaterCharges);
+            Console.WriteLine("The Cleaning Charges are " + rentable.CleaningCharges);
         }
 
-        private int GetRentingCharges(IRentable rentable)
-        {
-            return 0;
-        }
+        //private int GetRentingCharges(IRentable rentable)
+        //{
+        //    if (rentable.GetType().Name == typeof(ShowRoom).Name)
+        //    {
+        //        return ((ShowRoom)(rentable)).Rent;
+        //    }
 
-        private int GetWaterCharges(IRentable rentable)
-        {
-            return 0;
-        }
+        //    return 0;
+        //}
 
-        private int GetElectricityCharges(IRentable rentable)
-        {
-            return 0;
-        }
+        //private int GetWaterCharges(IRentable rentable)
+        //{
+        //    if (rentable.GetType().Name == typeof(ShowRoom).Name)
+        //    {
+        //        return ((ShowRoom)(rentable)).WaterCharges;
+        //    }
 
-        private int GetCleaningCharges(IRentable rentable)
-        {
-            return 0;
-        }
+        //    return 0;
+        //}
+
+        //private int GetElectricityCharges(IRentable rentable)
+        //{
+        //    return 0;
+        //}
+
+        //private int GetCleaningCharges(IRentable rentable)
+        //{
+        //    return 0;
+        //}
     }
 }

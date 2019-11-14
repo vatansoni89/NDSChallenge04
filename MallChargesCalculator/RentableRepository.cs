@@ -33,7 +33,7 @@ namespace MallChargesCalculator
             new Parking(){Id = 212, CarCapacity = 50, MotorBikeCapacity = 150},
         };
 
-        private Dictionary<int,IRentable> _rentableDictionary = new Dictionary<int, IRentable>();
+        private Dictionary<int, IRentable> _rentableDictionary = new Dictionary<int, IRentable>();
 
         public RentableRepository()
         {
