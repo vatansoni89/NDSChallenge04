@@ -18,7 +18,7 @@ The rent should be calculated as below
 * AdvertisementBoard: AreaInSquareFeet * 3
 * Parking: CarCapacity * 300 + MotorBikeCapacity * 50
 
-## Requeirments from office of Mr. X
+## Requeirments from office of Mr. W(x)
 The water charges should be calculated as below
 * ShowRoom:  AreaInSquareFeet * 4
 * Stall: AreaInSquareFeet * 6
@@ -29,7 +29,7 @@ The water charges should be calculated as below
 * AdvertisementBoard: 0
 * Parking: CarCapacity * 1 + MotorBikeCapacity * .5
 
-## Requeirments from office of Mr. Y
+## Requeirments from office of Mr. E(Y)
 The electricity charges should be calculated as below
 * ShowRoom:  AreaInSquareFeet * 3
 * Stall: AreaInSquareFeet * 5
@@ -40,7 +40,7 @@ The electricity charges should be calculated as below
 * AdvertisementBoard: AreaInSquareFeet * 10
 * Parking: 1000
 
-## Requeirments from office of Mr. Z
+## Requeirments from office of Mr. C(Z)
 The cleaning charges should be calculated as below
 * ShowRoom:  AreaInSquareFeet * 1
 * Stall: AreaInSquareFeet * 1
